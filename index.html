@@ -23,6 +23,23 @@
 
     <!-- Activity Indicator -->
     <script src="spin.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    <div class="container" id="spinnerContainer">
+      <div class="page-header">
+        <h1>Please wait...</h1>
+      </div>
+      <p class="lead">Your browser will automatically redirect you to the requested page.</p><br><br>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; 2016 DBZ Technology</p>
+      </div>
+    </footer>
 
     <script>
         var opts = {
@@ -50,25 +67,5 @@
         var target = document.getElementById('spinnerContainer');
         var spinner = new Spinner(opts).spin(target);
     </script>
-
-
-  </head>
-
-  <body>
-
-    <!-- Begin page content -->
-    <div class="container">
-      <div class="page-header">
-        <h1>Please wait...</h1>
-      </div>
-      <p class="lead">Your browser will automatically redirect you to the requested page.</p><br><br>
-    </div>
-
-    <footer class="footer">
-      <div class="container" id="spinnerContainer">
-        <p class="text-muted">&copy; 2016 DBZ Technology</p>
-      </div>
-    </footer>
-
   </body>
 </html>
