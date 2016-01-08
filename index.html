@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Brendan Boyle">
+
+    <title>Sticky Footer Template for Bootstrap</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Activity Indicator -->
+    <script src="spin.min.js"></script>
+
+    <script>
+        var opts = {
+              lines: 13 // The number of lines to draw
+            , length: 28 // The length of each line
+            , width: 14 // The line thickness
+            , radius: 42 // The radius of the inner circle
+            , scale: 1 // Scales overall size of the spinner
+            , corners: 1 // Corner roundness (0..1)
+            , color: '#000' // #rgb or #rrggbb or array of colors
+            , opacity: 0.25 // Opacity of the lines
+            , rotate: 0 // The rotation offset
+            , direction: 1 // 1: clockwise, -1: counterclockwise
+            , speed: 1 // Rounds per second
+            , trail: 60 // Afterglow percentage
+            , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+            , zIndex: 2e9 // The z-index (defaults to 2000000000)
+            , className: 'spinner' // The CSS class to assign to the spinner
+            , top: '50%' // Top position relative to parent
+            , left: '50%' // Left position relative to parent
+            , shadow: false // Whether to render a shadow
+            , hwaccel: false // Whether to use hardware acceleration
+            , position: 'absolute' // Element positioning
+        };
+        var target = document.getElementById('spinnerContainer');
+        var spinner = new Spinner(opts).spin(target);
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Please wait...</h1>
+      </div>
+      <p class="lead">Your browser will automatically redirect you to the requested page.</p><br><br>
+    </div>
+
+    <footer class="footer">
+      <div class="container" id="spinnerContainer">
+        <p class="text-muted">&copy; 2016 DBZ Technology</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
