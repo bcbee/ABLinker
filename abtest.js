@@ -5,4 +5,4 @@ var sites = [
 
 var index = Math.floor((Math.random() * sites.length));
 
-window.location = sites[index];
+//window.location = sites[index];

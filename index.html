@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="description" content="SnapSafe would like to invite you to take a quick survey to help shape our exciting new product, the SnapSafe Band. See more at https://snapsafe.io">
     <meta name="author" content="Brendan Boyle">
 
-    <title>Team Survey</title>
+    <meta property="og:image" content="social.png" />
+    <meta property="og:site_name" content="SnapSafe"/>
+    <meta property="og:title" content="Band Survey"/>
+
+    <title>SnapSafe Survey</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -35,6 +39,7 @@
     <!-- Begin page content -->
     <div class="container" id="spinnerContainer">
       <div class="page-header">
+        <img src="social.png" alt="SnapSafe Survey" style="width: 100%; border-radius: 5px;" />
         <h1>Please wait...</h1>
       </div>
       <p class="lead">Your browser will automatically redirect you to the requested page.</p><br><br>
@@ -69,8 +74,8 @@
             , hwaccel: false // Whether to use hardware acceleration
             , position: 'absolute' // Element positioning
         };
-        var target = document.getElementById('spinnerContainer');
-        var spinner = new Spinner(opts).spin(target);
+        //var target = document.getElementById('spinnerContainer');
+        //var spinner = new Spinner(opts).spin(target);
     </script>
   </body>
 </html>
